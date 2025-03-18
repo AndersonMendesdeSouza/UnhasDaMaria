@@ -6,6 +6,7 @@
 }
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Estilos gerais */
@@ -17,7 +18,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 12000px;
   margin: 0 auto;
   padding: 20px;
  
@@ -101,6 +102,13 @@ header li{
   border-radius: 20px;
   width: 100%;
   color: #ffffff;
+ 
+}
+#portfolio{
+  display: flex;
+  flex-direction: column;
+ 
+ 
 }
 #portfolio h3{
   color: #b76e79;
@@ -125,6 +133,7 @@ header li{
   display: flex;
  align-items: center;
  flex-direction: column;
+ justify-content: center;
 }
 .whatsapp-button {
     position: fixed;
