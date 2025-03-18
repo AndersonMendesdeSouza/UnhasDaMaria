@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 /* Estilos gerais */
 body {
@@ -13,12 +16,12 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+ 
 }
-
 h1, h2 {
   color: #ffffff; /* Cor quente para destacar títulos */
   text-align: center;
@@ -39,28 +42,83 @@ button {
   font-size: 1rem;
   border-radius: 5px;
 }
+.banner{
+  margin-top: 50px;
+  background-color: #333;
+  background-image: url(/img/Webp.net-resizeimage.png);
+  background-size: 100% 100%;
+ background-position: center;
+ background-repeat: no-repeat;
 
+  width: 100%;
+  height: 350px;
+ 
+}
 button:hover {
   background-color: #E5533A;
 }
 
 /* Cabeçalho */
 header {
-  background-color: #b76e79;
-  padding: 50px 0;
+  background-color: #c7727e;
+ height: 120px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+ margin-bottom: -50px;
+  }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size:30px;
+  
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 15px;
 }
-
+header   a{
+  color: #e2dede;
+ display: inline-block;
+ transition: 0.3s;
+}
+header a:hover{
+  color: #ffffff;
+ transform: scale(1.1);
+}
+ .bloco{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center ;
+ 
+ }
+ 
+header li{
+ display: inline-block;
+ margin: 0px 50px;
+ 
+}
+.Trabalhos{
+  background-color: #c7727e;
+  border-radius: 20px;
+  width: 100%;
+  color: #ffffff;
+}
+#portfolio h3{
+  color: #b76e79;
+  font-family: serif;
+  font-size: 30px;
+}
+#portfolio1 h3{
+  color: #b76e79;
+  font-family: serif;
+  font-size: 30px;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
 /* Seções */
 .section {
+  padding: 50px 0;
+}
+.section1 {
   padding: 50px 0;
 }
 .container{
@@ -103,10 +161,18 @@ header p {
 
 
 #portfolio h2{
-  color: #b76e79;
+  color: white;
   font-size: 30px;
 }
 #portfolio .gallery {
+ 
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+#portfolio1 .gallery {
  
   max-width: 80%;
   display: grid;
@@ -191,4 +257,13 @@ padding: 10px;
  position: fixed;
  
  
+}
+hr {
+ 
+ border: none;
+ width: 100%;
+   height: 3px;
+   background-color: #e2dfdf;
+   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
+   margin: 20px 0;
 }
